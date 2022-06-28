@@ -4,10 +4,10 @@
   inputs.SimpleITKPkgs.url = "git+ssh://git@github.com/lizi002/nix-SimpleITK?ref=main";
   inputs.torchioPkgs.url = "./torchio";
   inputs.monaiPkgs.url = "./monai";
-  inputs.lowdosepetPkgs.url = "git+ssh://git@github.com/chengaoyu/LowDosePET.git?ref=main";
+  inputs.lowdosepetPkgs.url = "git+ssh://git@github.com/chengaoyu/LowDosePET?ref=main";
 
 
-  outputs = { self, nixpkgs, flake-utils, SimpleITKPkgs, torchioPkgs, monaiPkgs }:
+  outputs = { self, nixpkgs, flake-utils, SimpleITKPkgs, torchioPkgs, monaiPkgs, lowdosepetPkgs }:
     (flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs { inherit system; config.allowUnfree = true; };
