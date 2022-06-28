@@ -17,7 +17,7 @@
           SimpleITK = SimpleITKPkgs.packages.${system}.SimpleITK;
           torchio = torchioPkgs.packages.${system}.torchio;
           monai = monaiPkgs.packages.${system}.monai;
-          lowdosepet = lowdosepetPkgs.packages.${system}.lowdosepet;
+          LowDosePet = lowdosepetPkgs.packages.${system}.LowDosePet;
         };
 
 
