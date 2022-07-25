@@ -19,8 +19,6 @@
           monai = monaiPkgs.packages.${system}.monai;
           LowDosePet = lowdosepetPkgs.packages.${system}.LowDosePet;
         };
-
-
       }
     )
     );

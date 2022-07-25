@@ -8,7 +8,7 @@
       let
         pkgs = import nixpkgs { inherit system; config.allowUnfree = true; };
         pname = "torchio";
-        version = "0.18.80";
+        version = "0.18.83";
         python = pkgs.python39;
         format = "wheel";
         SimpleITK = SimpleITKPkgs.packages.${system}.SimpleITK;
@@ -21,7 +21,8 @@
 
           src = python.pkgs.fetchPypi {
             inherit pname version format;
-            sha256 = "sha256-q2eQLryB/7w3uPI+LK+9JyMY/ymYx02zm1zYE2dhqxU=";
+            sha256 = "sha256-dxmd6dnBTfsofYG4Ed4+ZCs16dJ+CG7qyjXoJZbeFcM=";
+            # sha256 = pkgs.lib.fakeSha256;
             dist = "py2.py3";
             #abi = "";
             python = "py2.py3";
