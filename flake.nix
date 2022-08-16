@@ -5,7 +5,7 @@
   inputs.torchioPkgs.url = "./torchio";
   inputs.monaiPkgs.url = "./monai";
   inputs.pyradiomicsPkgs.url = "./pyradiomics";
-  inputs.lowdosepetPkgs.url = "git+ssh://git@github.com/chengaoyu/LowDosePET?ref=main";
+  inputs.lowdosepetPkgs.url = "git+ssh://git@github.com/chengaoyu/LowDosePET?ref=liusheng";
 
 
   outputs = { self, nixpkgs, flake-utils, SimpleITKPkgs, torchioPkgs, monaiPkgs, pyradiomicsPkgs, lowdosepetPkgs }:
