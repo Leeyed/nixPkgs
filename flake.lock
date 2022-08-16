@@ -62,8 +62,8 @@
     },
     "SimpleITKPkgs_4": {
       "inputs": {
-        "flake-utils": "flake-utils_10",
-        "nixpkgs": "nixpkgs_10"
+        "flake-utils": "flake-utils_12",
+        "nixpkgs": "nixpkgs_12"
       },
       "locked": {
         "lastModified": 1656058408,
@@ -96,6 +96,20 @@
     },
     "flake-utils_10": {
       "locked": {
+        "lastModified": 1659877975,
+        "narHash": "sha256-zllb8aq3YO3h8B/U0/J1WBgAL8EX5yWf5pMj3G0NAmc=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "c0e246b9b83f637f4681389ecabcb2681b4f3af0",
+        "type": "github"
+      },
+      "original": {
+        "id": "flake-utils",
+        "type": "indirect"
+      }
+    },
+    "flake-utils_11": {
+      "locked": {
         "lastModified": 1653893745,
         "narHash": "sha256-0jntwV3Z8//YwuOjzhV2sgJJPt+HY6KhU7VZUL0fKZQ=",
         "owner": "numtide",
@@ -108,7 +122,21 @@
         "type": "indirect"
       }
     },
-    "flake-utils_11": {
+    "flake-utils_12": {
+      "locked": {
+        "lastModified": 1653893745,
+        "narHash": "sha256-0jntwV3Z8//YwuOjzhV2sgJJPt+HY6KhU7VZUL0fKZQ=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "1ed9fb1935d260de5fe1c2f7ee0ebaae17ed2fa1",
+        "type": "github"
+      },
+      "original": {
+        "id": "flake-utils",
+        "type": "indirect"
+      }
+    },
+    "flake-utils_13": {
       "locked": {
         "lastModified": 1656065134,
         "narHash": "sha256-oc6E6ByIw3oJaIyc67maaFcnjYOz1mMcOtHxbEf9NwQ=",
@@ -241,16 +269,16 @@
         "nixpkgs": "nixpkgs_7"
       },
       "locked": {
-        "lastModified": 1656409390,
-        "narHash": "sha256-BDH6/1qd8aBbYoXeBQpCebbNr5zMcEoQDJzA3CWQt/0=",
-        "ref": "main",
-        "rev": "3561cf444e7a1ae2f624ce32f29e789d3feae78d",
-        "revCount": 34,
+        "lastModified": 1660611287,
+        "narHash": "sha256-1UgnWmOj+3oxyjOWFa7zo4ZU4KONZ8n5V0C6Y3OrUCE=",
+        "ref": "liusheng",
+        "rev": "0e569ed5f144726ba787f88071061e2aeb53b00f",
+        "revCount": 106,
         "type": "git",
         "url": "ssh://git@github.com/chengaoyu/LowDosePET"
       },
       "original": {
-        "ref": "main",
+        "ref": "liusheng",
         "type": "git",
         "url": "ssh://git@github.com/chengaoyu/LowDosePET"
       }
@@ -277,11 +305,11 @@
       },
       "locked": {
         "narHash": "sha256-+jg7IaaWx7muhOsj6iKDHz/44K+sm1jGk7grV+0MNw4=",
-        "path": "/nix/store/1df2c4qi88pnqbjh4indy777pm9p23ym-source/monai",
+        "path": "/nix/store/38s3s8ik6m17rlnncwpz5hyvdzbmcgnd-source/monai",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/1df2c4qi88pnqbjh4indy777pm9p23ym-source/monai",
+        "path": "/nix/store/38s3s8ik6m17rlnncwpz5hyvdzbmcgnd-source/monai",
         "type": "path"
       }
     },
@@ -325,6 +353,21 @@
     },
     "nixpkgs_10": {
       "locked": {
+        "lastModified": 1660496378,
+        "narHash": "sha256-sgAhmrC1iSnl5T2VPPiMpciH1aRw5c7PYEdXX6jd6Gk=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "879121648fe522b38cc1cf75aef160a14a1f2e7b",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "ref": "nixos-22.05",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_11": {
+      "locked": {
         "lastModified": 1655729248,
         "narHash": "sha256-5GrrkHaXknG1M4lYskTR3H9Ghzdmdhp8LhFL9xEKwtU=",
         "owner": "NixOS",
@@ -338,7 +381,22 @@
         "type": "indirect"
       }
     },
-    "nixpkgs_11": {
+    "nixpkgs_12": {
+      "locked": {
+        "lastModified": 1655729248,
+        "narHash": "sha256-5GrrkHaXknG1M4lYskTR3H9Ghzdmdhp8LhFL9xEKwtU=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "d423c0ce15adf573c2045bef5c921b958b674bb4",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "ref": "nixos-22.05",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_13": {
       "locked": {
         "lastModified": 1656265786,
         "narHash": "sha256-A9RkoGrxzsmMm0vily18p92Rasb+MbdDMaSnzmywXKw=",
@@ -473,6 +531,22 @@
         "type": "indirect"
       }
     },
+    "pyradiomicsPkgs": {
+      "inputs": {
+        "flake-utils": "flake-utils_10",
+        "nixpkgs": "nixpkgs_10",
+        "simpleitk": "simpleitk"
+      },
+      "locked": {
+        "narHash": "sha256-n/+oB5xExyvH4kUrP+y8HRT9SLjGADE/4mrBzv5fgD8=",
+        "path": "/nix/store/38s3s8ik6m17rlnncwpz5hyvdzbmcgnd-source/pyradiomics",
+        "type": "path"
+      },
+      "original": {
+        "path": "/nix/store/38s3s8ik6m17rlnncwpz5hyvdzbmcgnd-source/pyradiomics",
+        "type": "path"
+      }
+    },
     "root": {
       "inputs": {
         "SimpleITKPkgs": "SimpleITKPkgs",
@@ -480,7 +554,28 @@
         "lowdosepetPkgs": "lowdosepetPkgs",
         "monaiPkgs": "monaiPkgs_2",
         "nixpkgs": "nixpkgs_9",
+        "pyradiomicsPkgs": "pyradiomicsPkgs",
         "torchioPkgs": "torchioPkgs_2"
+      }
+    },
+    "simpleitk": {
+      "inputs": {
+        "flake-utils": "flake-utils_11",
+        "nixpkgs": "nixpkgs_11"
+      },
+      "locked": {
+        "lastModified": 1656058408,
+        "narHash": "sha256-H+bHhlwBiuW63zwQdnpWLJ+dpBbVcBw+nRBPT8VlsJs=",
+        "ref": "main",
+        "rev": "b1cd9758b602ca52e150ff062593af2986cadd7b",
+        "revCount": 1,
+        "type": "git",
+        "url": "ssh://git@github.com/lizi002/nix-SimpleITK"
+      },
+      "original": {
+        "ref": "main",
+        "type": "git",
+        "url": "ssh://git@github.com/lizi002/nix-SimpleITK"
       }
     },
     "torchioPkgs": {
@@ -502,16 +597,16 @@
     "torchioPkgs_2": {
       "inputs": {
         "SimpleITKPkgs": "SimpleITKPkgs_4",
-        "flake-utils": "flake-utils_11",
-        "nixpkgs": "nixpkgs_11"
+        "flake-utils": "flake-utils_13",
+        "nixpkgs": "nixpkgs_13"
       },
       "locked": {
         "narHash": "sha256-HX9+LGHI15T+N1N3rmxmqZ9sbAyHNK7Sm3RVE+Um99E=",
-        "path": "/nix/store/1df2c4qi88pnqbjh4indy777pm9p23ym-source/torchio",
+        "path": "/nix/store/38s3s8ik6m17rlnncwpz5hyvdzbmcgnd-source/torchio",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/1df2c4qi88pnqbjh4indy777pm9p23ym-source/torchio",
+        "path": "/nix/store/38s3s8ik6m17rlnncwpz5hyvdzbmcgnd-source/torchio",
         "type": "path"
       }
     }
