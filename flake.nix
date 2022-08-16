@@ -5,10 +5,10 @@
   inputs.torchioPkgs.url = "./torchio";
   inputs.monaiPkgs.url = "./monai";
   inputs.pyradiomicsPkgs.url = "./pyradiomics";
-  inputs.lowdosepetPkgs.url = "git+ssh://git@github.com/chengaoyu/LowDosePET?ref=liusheng";
+  # inputs.lowdosepetPkgs.url = "git+ssh://git@github.com/chengaoyu/LowDosePET?ref=liusheng";
 
 
-  outputs = { self, nixpkgs, flake-utils, SimpleITKPkgs, torchioPkgs, monaiPkgs, pyradiomicsPkgs, lowdosepetPkgs }:
+  outputs = { self, nixpkgs, flake-utils, SimpleITKPkgs, torchioPkgs, monaiPkgs, pyradiomicsPkgs }:
     (flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs { inherit system; config.allowUnfree = true; };
@@ -19,7 +19,7 @@
           torchio = torchioPkgs.packages.${system}.torchio;
           monai = monaiPkgs.packages.${system}.monai;
           pyradiomics = pyradiomicsPkgs.packages.${system}.pyradiomics;
-          LowDosePet = lowdosepetPkgs.packages.${system}.LowDosePet;
+          # LowDosePet = lowdosepetPkgs.packages.${system}.LowDosePet;
         };
       }
     )
