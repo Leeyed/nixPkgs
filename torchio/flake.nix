@@ -48,6 +48,20 @@
         };
 
         defaultApp = self.apps.${system}.${pname};
+        
+        
+        # devShell = with pkgs; with python39Packages; mkShell {
+        #     buildInputs = [
+        #       click
+        #       deprecated
+        #       nibabel
+        #       humanize
+        #       pytorch
+        #       tqdm
+        #       SimpleITK
+        #       self.packages.${system}.${pname}
+        #     ];
+        # };
       }
     )
     );
