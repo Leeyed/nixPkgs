@@ -22,18 +22,19 @@
           # LowDosePet = lowdosepetPkgs.packages.${system}.LowDosePet;
         };
 
-        devShell = with pkgs; with python39Packages; mkShell {
-            buildInputs = [
-              click
-              deprecated
-              nibabel
-              humanize
-              pytorch
-              tqdm
-              SimpleITK
-              self.packages.${system}.torchio
-            ];
-        };
+        # devShell = with pkgs; with python39Packages; mkShell {
+        #   LD_LIBRARY_PATH = "${stdenv.cc.cc.lib}/lib/:/run/opengl-driver/lib/";
+        #   buildInputs = [
+        #     click
+        #     deprecated
+        #     nibabel
+        #     humanize
+        #     pytorch
+        #     tqdm
+        #     self.packages.${system}.SimpleITK
+        #     self.packages.${system}.torchio
+        #   ];
+        # };
       }
     )
     );
