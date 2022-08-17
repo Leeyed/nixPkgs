@@ -145,11 +145,11 @@
       },
       "locked": {
         "narHash": "sha256-+jg7IaaWx7muhOsj6iKDHz/44K+sm1jGk7grV+0MNw4=",
-        "path": "/nix/store/ay51qg6v1iwj3rz84ljycym59drjcw8i-source/monai",
+        "path": "/nix/store/j6ybvc4hz25swl4xazazzvr9h4rxpf2r-source/monai",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/ay51qg6v1iwj3rz84ljycym59drjcw8i-source/monai",
+        "path": "/nix/store/j6ybvc4hz25swl4xazazzvr9h4rxpf2r-source/monai",
         "type": "path"
       }
     },
@@ -266,11 +266,11 @@
       },
       "locked": {
         "narHash": "sha256-GyzSapCH01ilmvXvP2iBPnz6ruUl+3+mQTT7ZVbRSmI=",
-        "path": "/nix/store/ay51qg6v1iwj3rz84ljycym59drjcw8i-source/pyradiomics",
+        "path": "/nix/store/j6ybvc4hz25swl4xazazzvr9h4rxpf2r-source/pyradiomics",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/ay51qg6v1iwj3rz84ljycym59drjcw8i-source/pyradiomics",
+        "path": "/nix/store/j6ybvc4hz25swl4xazazzvr9h4rxpf2r-source/pyradiomics",
         "type": "path"
       }
     },
@@ -312,11 +312,11 @@
       },
       "locked": {
         "narHash": "sha256-HX9+LGHI15T+N1N3rmxmqZ9sbAyHNK7Sm3RVE+Um99E=",
-        "path": "/nix/store/ay51qg6v1iwj3rz84ljycym59drjcw8i-source/torchio",
+        "path": "/nix/store/j6ybvc4hz25swl4xazazzvr9h4rxpf2r-source/torchio",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/ay51qg6v1iwj3rz84ljycym59drjcw8i-source/torchio",
+        "path": "/nix/store/j6ybvc4hz25swl4xazazzvr9h4rxpf2r-source/torchio",
         "type": "path"
       }
     }
