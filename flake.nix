@@ -21,6 +21,19 @@
           pyradiomics = pyradiomicsPkgs.packages.${system}.pyradiomics;
           # LowDosePet = lowdosepetPkgs.packages.${system}.LowDosePet;
         };
+
+        devShell = with pkgs; with python39Packages; mkShell {
+            buildInputs = [
+              click
+              deprecated
+              nibabel
+              humanize
+              pytorch
+              tqdm
+              SimpleITK
+              self.packages.${system}.torchio
+            ];
+        };
       }
     )
     );
