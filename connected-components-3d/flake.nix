@@ -1,34 +1,34 @@
 {
-  description = "monai";
+  description = "connected-components-3d";
   inputs.nixpkgs.url = "nixpkgs/nixos-22.05";
+ # inputs.simpleitk.url = "git+ssh://git@github.com/lizi002/nix-SimpleITK?ref=main";
 
   outputs = { self, nixpkgs, flake-utils }:
     (flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs { inherit system; config.allowUnfree = true; };
-        pname = "monai";
-        version = "0.9.0-202206131636";
-        python = pkgs.python39;
+        pname = "connected_components_3d";
+        version = "3.10.5";
         format = "wheel";
+        python = pkgs.python39;
       in
       {
-        packages.${pname} = python.pkgs.buildPythonPackage {
+        packages.connected-components-3d = python.pkgs.buildPythonPackage {
           pname = pname;
           version = version;
           format = format;
-
           src = python.pkgs.fetchPypi {
             inherit pname version format;
-            sha256 = "sha256-jHccdnakpw4yR6htkAn0cR4sDX9VvNZKow6DgQZdvtE=";
-            dist = "py3";
-            #abi = "";
-            python = "py3";
-            # platform = "manylinux_2_12_x86_64.manylinux2010_x86_64";
+            sha256 = "sha256-uYpu97Hr7Ura5zBCv+zug3A7/y8YwNPc4p7E/RPicbE=";
+            # sha256 = pkgs.lib.fakeSha256;
+            dist = "cp39";
+            abi = "cp39";
+            python = "cp39";
+            platform = "manylinux_2_17_x86_64.manylinux2014_x86_64";
           };
 
           buildInputs = with pkgs; with python39Packages; [
             numpy
-            pytorch
           ];
           doCheck = false;
         };

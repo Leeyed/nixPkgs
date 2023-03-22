@@ -1,33 +1,27 @@
 {
-  description = "monai";
+  description = "dynamic-network-architectures";
   inputs.nixpkgs.url = "nixpkgs/nixos-22.05";
+  #inputs.simpleitk.url = "git+ssh://git@github.com/lizi002/nix-SimpleITK?ref=main";
+  #inputs.connected-components-3d.url = "../connected-components-3d";
 
-  outputs = { self, nixpkgs, flake-utils }:
+  outputs = { self, nixpkgs, flake-utils}:
     (flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs { inherit system; config.allowUnfree = true; };
-        pname = "monai";
-        version = "0.9.0-202206131636";
+        pname = "dynamic_network_architectures";
+        version = "0.2";
         python = pkgs.python39;
-        format = "wheel";
       in
       {
-        packages.${pname} = python.pkgs.buildPythonPackage {
+        packages.dynamic-network-architectures  = python.pkgs.buildPythonPackage {
           pname = pname;
           version = version;
-          format = format;
-
           src = python.pkgs.fetchPypi {
-            inherit pname version format;
-            sha256 = "sha256-jHccdnakpw4yR6htkAn0cR4sDX9VvNZKow6DgQZdvtE=";
-            dist = "py3";
-            #abi = "";
-            python = "py3";
-            # platform = "manylinux_2_12_x86_64.manylinux2010_x86_64";
+            inherit pname version;
+            sha256 = "sha256-8YpxX2qZRVdBq4mBi4Fm/OME1iuVwWKWVvKTNI/+YT4=";
           };
 
           buildInputs = with pkgs; with python39Packages; [
-            numpy
             pytorch
           ];
           doCheck = false;
